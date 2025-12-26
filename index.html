@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora IVA Chile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Calculadora de IVA en Chile</h1>
+    <p class="year"></p>
+
+    <input 
+      type="text" 
+      id="montoInput" 
+      placeholder="Ingrese monto"
+      autocomplete="off"
+    >
+
+    <section class="cards">
+      <div class="card">
+        <span class="badge">Monto sin IVA (Neto)</span>
+        <h2 id="neto">$0</h2>
+        <small>IVA (19%): <span id="ivaDesdeBruto">$0</span></small>
+      </div>
+
+      <div class="card">
+        <span class="badge blue">Monto con IVA (Bruto)</span>
+        <h2 id="bruto">$0</h2>
+        <small>IVA (19%): <span id="ivaDesdeNeto">$0</span></small>
+      </div>
+    </section>
+
+  <footer class="footer">
+  <img 
+    src="https://www.epicentrochile.com/wp-content/themes/epicentro2018/images/logo-horizontal.png" 
+    alt="Logo Epicentro Chile"
+  />
+  <p class="footer-text">Desarrollado por <strong>El Epicentro Labs</strong></p>
+</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
